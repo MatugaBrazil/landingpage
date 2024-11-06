@@ -1,0 +1,44 @@
+
+
+
+@import url('https://fonts.cdnfonts.com/css/sf-pixelate');
+
+@font-face {
+    font-family: Pokemon;
+    src: url("../fonts/PocketMonk-15ze.ttf");
+};
+
+/* 
+Fonte abaixo: 8 BITS
+font-family: 'SF Pixelate';
+*/
+* { 
+    padding: 0;
+    margin: 0;
+}
+
+
+body{ 
+    font-family: 'SF Pixelate';
+  }
+
+h1, h2, h3, h4, h5, h6{ 
+    font-family: Pokemon;
+}
+
+
+
+
+
+
+
+
+
+.icone{ 
+    width: 7rem;
+    height: 7rem;
+    
+}
+    
+
+

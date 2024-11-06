@@ -1,6 +1,4 @@
-
-
-
+/* Fontes que serão utilizadas */
 @import url('https://fonts.cdnfonts.com/css/sf-pixelate');
 
 @font-face {
@@ -12,27 +10,61 @@
 Fonte abaixo: 8 BITS
 font-family: 'SF Pixelate';
 */
+
 * { 
     padding: 0;
     margin: 0;
 }
 
-
+html{ 
+    font-size: 62.5%;
+}
+/* Padronizar os textos com a mesma fonte*/
 body{ 
     font-family: 'SF Pixelate';
+    font-size: 1.6rem;
+    
+    
   }
 
+/* Padronizar os titulos com a mesma fonte*/
 h1, h2, h3, h4, h5, h6{ 
     font-family: Pokemon;
 }
 
+/* Definindo o tamanho dos titulos */
 
+h1 { 
+    font-size: 6rem;
+}
+h2{ 
+    font-size: 5.5rem;
+}
+h3{
+    font-size: 5rem;
+}
+h4{ 
+    font-size: 4.5rem;
+}
+h5 {
+    font-size: 4;
+}
+h6{ 
+    font-size: 3.5;
+}
 
+/* BACKGROUND DA IMAGEM SVG (PODE SER UTILIZADO EM QUALQUER ELEMENTO */
+.main-bg{ 
+    background-image: url("../img/main-bg.svg");
+    background-size: cover;
+    background-position: center center;
+}
 
-
-
-
-
+/* main content é utilizado na classe para delimitar o site e centralizar os elementos*/
+.main-content { 
+    max-width: 75rem;
+    margin: 0 auto;
+}
 
 .icone{ 
     width: 7rem;

@@ -10,67 +10,63 @@
 Fonte abaixo: 8 BITS
 font-family: 'SF Pixelate';
 */
-
-* { 
+*{ 
     padding: 0;
     margin: 0;
 }
 
-html{ 
-    font-size: 62.5%;
+body{
+
 }
-/* Padronizar os textos com a mesma fonte*/
-body{ 
+
+
+/* BACK GROUD PRINCIPAL*/
+.main-bg { 
+    background-image: url("/ASSETS/img/main-bg.svg");
     font-family: 'SF Pixelate';
-    font-size: 1.6rem;
-    
-    
-  }
-
-/* Padronizar os titulos com a mesma fonte*/
-h1, h2, h3, h4, h5, h6{ 
-    font-family: Pokemon;
+    color: white;
 }
 
-/* Definindo o tamanho dos titulos */
-
-h1 { 
-    font-size: 6rem;
-}
-h2{ 
-    font-size: 5.5rem;
-}
-h3{
-    font-size: 5rem;
-}
-h4{ 
-    font-size: 4.5rem;
-}
-h5 {
-    font-size: 4;
-}
-h6{ 
-    font-size: 3.5;
+/* BACK GROUD SECUNDARIO*/
+.second-bg{ 
+    background: black;
 }
 
-/* BACKGROUND DA IMAGEM SVG (PODE SER UTILIZADO EM QUALQUER ELEMENTO */
-.main-bg{ 
-    background-image: url("../img/main-bg.svg");
-    background-size: cover;
-    background-position: center center;
+
+.section { 
+    min-height: 100vh;
 }
 
-/* main content é utilizado na classe para delimitar o site e centralizar os elementos*/
-.main-content { 
-    max-width: 75rem;
-    margin: 0 auto;
-}
-
+/* DEFININDO TAMANHO DA IMAGEM*/
 .icone{ 
     width: 7rem;
     height: 7rem;
+}
+
+
+
+
+.menu{ 
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menu-content { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul { 
+    list-style: none;
+    display: flex;
+    
     
 }
-    
 
-
+.menu ul li a { 
+    display: block;
+}

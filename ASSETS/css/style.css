@@ -15,58 +15,93 @@ font-family: 'SF Pixelate';
     margin: 0;
 }
 
-body{
-
+body{ 
+    font-family: 'SF Pixelate';
 }
 
-
-/* BACK GROUD PRINCIPAL*/
 .main-bg { 
     background-image: url("/ASSETS/img/main-bg.svg");
-    font-family: 'SF Pixelate';
-    color: white;
 }
 
-/* BACK GROUD SECUNDARIO*/
 .second-bg{ 
-    background: black;
+    background: white;
+}
+
+/* tamanho do charizard */
+.icone { 
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    
+    
 }
 
 
-.section { 
-    min-height: 100vh;
-}
 
-/* DEFININDO TAMANHO DA IMAGEM*/
-.icone{ 
-    width: 7rem;
-    height: 7rem;
+.main-content { 
+    width: 1200px;
+    margin: 0 auto;
 }
 
 
 
+.menu-content{ 
+    
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 0;
+    
+    
+}
 
 .menu{ 
-    position: fixed;
     display: flex;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-}
-
-.menu-content { 
-    display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    background: #cdcdcd;
 }
 
 .menu ul { 
     list-style: none;
     display: flex;
-    
-    
+    gap: 10px;
+
 }
 
 .menu ul li a { 
     display: block;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    color: Black;
+    
+
 }
+
+.menu ul li a::after { 
+    content:''; 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: rgb(168, 98, 98);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover:after { 
+   width: 50%;
+   left: 25%;
+}
+
+
+.section{ 
+    min-height: 100vh;
+}
+
